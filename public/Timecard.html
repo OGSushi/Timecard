@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timecard App</title>
+    <link rel="stylesheet" href="CSS/base.css">
+	<link rel="stylesheet" href="CSS/Timecard.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container my-4">
+		<h1>Welcome to BayBridge</h1>
+	<div class="flex-container"> <!-- This wraps sidebar + content -->
+		<div class="row">
+			<!-- Sidebar 1 -->
+			<div class="col-md-3 sidebar1">
+				<button onclick="home()" class="btn btn-primary mb-2">Home</button>
+				<button onclick="logout()" class="btn btn-secondary mb-2">Logout</button>
+				<button onclick="saveEdits()" class="btn btn-success">Save</button>		
+			</div>
+			<div class="col-md-6">
+				<div class="main-content">
+				<!-- Main Content -->
+				<h2>Timecard</h2>
+				<!-- Sidebar content, e.g., navigation, user inputs -->
+					<select id="month" class+"form-control mb-3">
+					<option value="January">January</option>
+					<option value="February">February</option>
+					<option value="March">March</option>
+					<option value="April">April</option>
+					<option value="May">May</option>
+					<option value="June">June</option>
+					<option value="July">July</option>
+					<option value="August">August</option>
+					<option value="September">September</option>
+					<option value="October">October</option>
+					<option value="November">November</option>
+					<option value="December">December</option>
+					<!-- Add options for all months of the year -->
+				</select>
+				<button onclick="showWeek(1)" class="btn btn-info mb-1">Week 1</button>
+				<button onclick="showWeek(2)" class="btn btn-info mb-1">Week 2</button>
+				<table id="timecardGrid"class="table table-bordered"></table>
+				<!-- Dynamically generate grid in JavaScript -->
+			<div>
+				<!-- Add more sidebar content here -->
+		<div>
+			<!-- Sidebar 2 -->			
+			<div class="col-md-3 sidebar2">
+			<h2>Extra Info</h2>
+			<!-- Additional sidebar content -->
+		</div>
+	</div>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>

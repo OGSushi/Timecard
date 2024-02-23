@@ -1,0 +1,5 @@
+body {
+    background-image: url('/Images/Blue Green Screen Gradient Background.png');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+}

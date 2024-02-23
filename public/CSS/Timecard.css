@@ -1,0 +1,84 @@
+/* Timecard.css */
+.sidebar, .sidebar1, {
+    border-radius: 0.25rem;
+    padding: 40px;
+}
+.sidebar2 {
+    background-color: #e9ecef; /* Example background color */
+    border-radius: 0.25rem;
+    padding: 40px;
+    margin-top: 20px; /* Added to ensure visibility in the layout */
+}
+
+/* Use Bootstrap's classes for buttons, inputs, and layout instead of custom CSS where possible */
+/* Custom styles for specific adjustments can go here */
+
+$grid-columns: 12;
+$grid-gutter-width: 992px;
+
+@include make-col($columns: 1);
+
+h1 {
+    text-align: center;
+	font-family: Ariel, sans-serif;
+	font-size: 200%;
+	font-weight: 700;	
+}
+
+h2 {
+    text-align: center;
+	font-family: Ariel, sans-serif;
+	font-size: 200%;
+	font-weight: 700;	
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+	color: black;
+	font-family: Ariel, sans-serif;
+	font-size: 1.2em;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.timecard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust based on days shown */
+    gap: 15px;
+    margin: 15px 0;
+	text-align: center;
+}
+.timecard-grid input {
+    padding: 10px;
+	color: #000000;
+	background-color: #fffff;
+    border: 1px round #ccc;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    margin: 10px;
+    width: 90px;
+    padding: 10px;
+}
+
+body {
+    background-image: url('/Images/Blue Green Screen Gradient Background.png');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+}
+
+.containter {
+	margin: 100px auto;
+    padding: 20px;

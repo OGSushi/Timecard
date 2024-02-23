@@ -1,0 +1,39 @@
+header, footer {
+    text-align: center; /* Center content */
+    padding: 20px; /* Add some padding */
+}
+
+.login-container {
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 100px auto;
+    padding: 50px;
+}
+
+
+
+body {
+    background-image: url('/Images/Blue Green Screen Gradient Background.png');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+}
+
+h1 {
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+
+h2 {
+	text-align: center;
+	width: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
