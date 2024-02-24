@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('static'));
 
 app.use(bodyParser.json());
 
@@ -17,7 +17,12 @@ const users = [
 ];
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+    res.sendFile(path.join(__dirname, 'login.html'));
+	if (err) {
+		console.log(err);
+        res.status(500).send("Error serving the file.");
+        
+    }
 });
 
 app.post('/login', (req, res) => {
@@ -41,9 +46,9 @@ app.listen(PORT, async () => { // Make this function async
     console.log(`Server is running on http://localhost:1227/login.html`);
 	try {
 		const url = await ngrok.connect ({
-			addr: PORT
+			addr: PORT,
 		});
-		console.log(`ngrok tunnel established at https://3960-2601-1c0-577e-24a0-5de4-fb16-f7fd-df8c.ngrok-free.app`);
+		console.log(`ngrok tunnel established at https://touching-fitting-rodent.ngrok-free.app`);
 	}   catch (error) {
 		console.error('Failed to establish ngrok tunnel:', error);
 	}	
